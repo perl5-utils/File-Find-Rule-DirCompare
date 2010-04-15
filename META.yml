@@ -1,0 +1,29 @@
+---
+abstract: 'Find files by comparing with 2nd directory'
+author:
+  - 'Jens Rehsack <rehsack@cpan.org>'
+build_requires:
+  File::Touch: 0
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: File-Find-Rule-DirCompare
+no_index:
+  directory:
+    - t/samples
+provides:
+  File::Find::Rule::DirCompare:
+    file: lib/File/Find/Rule/DirCompare.pm
+    version: 0.01
+requires:
+  File::Find::Rule: 0.3
+  Params::Util: 1
+  Text::Glob: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
