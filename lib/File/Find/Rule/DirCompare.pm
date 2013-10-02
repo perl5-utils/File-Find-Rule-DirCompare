@@ -67,7 +67,7 @@ by L<File::Find::Rule> according to the matching rules.
 Accept a list of directory names to be checked if found files exists in any
 of them or not. The directory names are interpreted relative to the current
 directory (L<Cwd/cwd>), not relative to the directory specified in C<in>.
-To ensure the right directory is choosen, specify an absolute path.
+To ensure the right directory is chosen, specify an absolute path.
 
 If the first argument is an array reference, the list in this array
 will be used.
