@@ -17,14 +17,14 @@ my $builder = Module::Build->new(
                   'Text::Glob'       => 0,
                 },
     add_to_cleanup => ['File-Find-Rule-DirCompare-*'],
-    meta_merge     => no_index => {
-                                directory => [qw(t/samples)],
-                              },
-    {
-       resources => {
-                      repository => "https://github.com/rehsack/File-Find-Rule-DirCompare",
+    meta_merge     => {
+                    no_index => {
+                                  directory => [qw(t/samples)],
+                                },
+                    resources => {
+                               repository => "https://github.com/rehsack/File-Find-Rule-DirCompare",
                     },
-    },
+                  },
     test_files => join( ' ' => 't/*.t xt/*.t' ),
 
                                 );
